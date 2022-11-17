@@ -9,6 +9,7 @@
     <a href='logout.php'><center>[Logout]</center></a>
     
     <?php 
+    //memeriksa apakah session keranjang sudah ada atau belum. jika sudah, maka akan mencetak isi keranjang menggunakan list di dalam foreach
         if (isset($_SESSION["keranjang"])) {
             $keranjang = $_SESSION['keranjang'];
 

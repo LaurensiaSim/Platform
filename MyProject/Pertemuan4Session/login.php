@@ -1,9 +1,11 @@
 <?php
     session_start();
-
+//memeriksa apakah session username ada/tidak. hal ini bertujuan untuk memeriksa apakah sudah login atau belum.
+//jika sudah, maka akan langsung diarahkan ke afterlogin yang berisi form pilih
         if (isset($_SESSION['username'])){
             header("Location: afterLogin.php");
         }
+//memeriksa apakah username dan pass sesuai atau tidak. jika sesuai, melakukan set session username menuju ke after login, jika tidak menuju ke login failed
         if(isset($_POST['masuk'])){
             $username = $_POST['uname'];
             $password = $_POST['pass'];

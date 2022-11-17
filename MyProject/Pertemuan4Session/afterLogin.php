@@ -42,7 +42,7 @@ if (isset($_SESSION['username'])) { ?>
                             echo "<br>";
                         }
                         ?>
-                    </td>
+                    </td> 
                 </tr>
                 <tr>
                     <td><br>Alat Tulis</td>
